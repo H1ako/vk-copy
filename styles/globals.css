@@ -7,3 +7,7 @@
         @apply bg-gray-200;
     }
 }
+
+.header_grid {
+    grid-template-columns: 160px 1fr 160px;
+}
