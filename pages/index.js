@@ -14,14 +14,14 @@ export default function Home({name, pic}) {
     dispatch(set_user({name, pic}))
   }
   return (
-    <div className="min-h-screen w-full">
+    <div className="min-h-screen w-full flex flex-row md:flex-col">
       <Head>
         <title>News</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header/>
 
-      <main>
+      <main className='grid gap-3 flex-grow grid-temlate-main md:px-[6%] lg:px-[18%]'>
         <Sidebar />
         <Center />
         <Asidebar />

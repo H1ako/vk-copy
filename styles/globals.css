@@ -6,8 +6,17 @@
     body {
         @apply bg-gray-200;
     }
+    .header-row {
+        @apply grid-temlate-main grid h-12 w-full px-[6%] lg:px-[18%] border-b-2 py-0 border-r-0;
+        
+    }
+    .header-col {
+        @apply flex flex-col h-screen w-12 border-r-2 py-3;
+    }
 }
 
-.header_grid {
+.grid-temlate-main {
     grid-template-columns: 160px 1fr 160px;
 }
+
+

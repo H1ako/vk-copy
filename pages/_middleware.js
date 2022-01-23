@@ -2,7 +2,7 @@ import {NextResponse} from 'next/server'
 import { getCookie } from 'cookies-next'
 
 export async function middleware(req, res) {
-    const user = JSON.parse(getCookie('user', { req, res} ))
+    const user = JSON.parse(getCookie('user', { req, res} ) ?? '{}')
     const token = user.access_token
     const {pathname} = req.nextUrl
     
