@@ -21,7 +21,7 @@ export default function Home({name, pic}) {
       </Head>
       <Header/>
 
-      <main className='grid gap-3 flex-grow grid-temlate-main md:px-[6%] lg:px-[18%]'>
+      <main className='grid gap-3 flex-grow md:grid-template-main grid-template-sm md:px-[6%] lg:px-[18%]'>
         <Sidebar />
         <Center />
         <Asidebar />

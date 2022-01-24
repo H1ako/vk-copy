@@ -7,7 +7,7 @@
         @apply bg-gray-200;
     }
     .header-row {
-        @apply grid-temlate-main grid h-12 w-full px-[6%] lg:px-[18%] border-b-2 py-0 border-r-0;
+        @apply grid-template-main grid h-12 w-full px-[6%] lg:px-[18%] border-b-2 py-0 border-r-0;
         
     }
     .header-col {
@@ -15,8 +15,12 @@
     }
 }
 
-.grid-temlate-main {
-    grid-template-columns: 160px 1fr 160px;
+.grid-template-main {
+    /* grid-template-columns: 160px 1fr 160px; */
+    grid-template-columns: 1fr 3fr 1fr;
 }
 
-
+.grid-template-sm {
+    /* grid-template-columns: 160px 1fr 160px; */
+    grid-template-columns: 12vw 1fr;
+}
