@@ -6,21 +6,61 @@
     body {
         @apply bg-gray-200;
     }
-    .header-row {
-        @apply grid-template-main grid h-12 w-full px-[6%] lg:px-[18%] border-b-2 py-0 border-r-0;
-        
-    }
-    .header-col {
-        @apply flex flex-col h-screen w-12 border-r-2 py-3;
-    }
-}
 
-.grid-template-main {
-    /* grid-template-columns: 160px 1fr 160px; */
-    grid-template-columns: 1fr 3fr 1fr;
-}
+    .sidebar-link {
+        @apply flex justify-center md:justify-start rounded-md px-2 py-1 items-center cursor-pointer hover:bg-[#dce1e6];
+    }
 
-.grid-template-sm {
-    /* grid-template-columns: 160px 1fr 160px; */
-    grid-template-columns: 12vw 1fr;
+    .sidebar-link svg {
+        @apply md:w-5 w-7;
+    }
+
+    .btn-post {
+        @apply px-3 py-1 bg-[#f0f2f5] rounded-full flex items-center gap-1 text-sm font-medium;
+    }
+
+    .grid-template-sm {
+        /* grid-template-columns: 160px 1fr 160px; */
+        grid-template-columns: 3rem minmax(160px, 1fr);
+    }
+
+    .grid-template-sidebar-0 {
+        grid-template-columns: 0 minmax(160px, 1fr);
+    }
+    
+    .grid-template-main {
+        grid-template-columns: 160px minmax(160px, 1fr) 220px;
+        /* grid-template-columns: 1fr 3fr 1fr; */
+    }
+
+    .grid-template-md {
+        grid-template-columns: 160px minmax(160px, 1fr);
+    }
+
+    .grid-newPost {
+        grid-template-columns: minmax(60px, 1fr) 1fr;
+    }
+
+    .stories-card::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: rgb(0 0 0 / .3);
+        border-radius: .75rem;
+    }
+
+    .stories-card img {
+        box-shadow: 0 0 0 2px #99d3ff;
+    }
+
+    .stories-card:nth-child(1) div::after {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        inset: 0;
+        background: url(data:image/svg+xml;charset=utf-8,%3Csvg%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22m0%200h24v24h-24z%22%2F%3E%3Cpath%20d%3D%22m11%202.5v9.5h-9.5a.5.5%200%201%200%200%201h9.5v9.5a.5.5%200%201%200%201%200v-9.5h9.5a.5.5%200%201%200%200-1h-9.5v-9.5a.5.5%200%201%200%20-1%200z%22%20stroke%3D%22%236290ca%22%20stroke-width%3D%222%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+        background-position: center center;
+        background-size: 40%;
+        background-repeat: no-repeat;
+    }
 }

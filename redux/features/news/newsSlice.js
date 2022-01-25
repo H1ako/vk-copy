@@ -4,7 +4,7 @@ export const newsSlice = createSlice({
     name: 'news',
     initialState: {
       name: 'Name',
-      pic: 'https://sun1-21.userapi.com/s/v1/if1/J6ZNGjrk_XlYV0jnySaCoez-JjzOnJhkXw6hlubH2JD4vVmgp-f8xYbPRtL5eEwJljBLkoMy.jpg?size=50x50&amp;quality=96&amp;crop=2,194,1077,1077&amp;ava=1',
+      pic: 'https://sun1-21.userapi.com/s/v1/if1/J6ZNGjrk_XlYV0jnySaCoez-JjzOnJhkXw6hlubH2JD4vVmgp-f8xYbPRtL5eEwJljBLkoMy.jpg?size=50x50&amp;quality=96&amp;crop=2,194,1077,1077&amp;ava=1'
 
     },
     reducers: {

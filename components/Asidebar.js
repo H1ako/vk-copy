@@ -1,6 +1,6 @@
 function Asidebar() {
     return (
-        <div className="py-2 relative md:block hidden">
+        <div className="py-2 sticky top-12 h-max lg:block hidden">
             <div className="bg-white relative text-[#5181b8] py-2 rounded-md shadow-sm">
                 <div className="">
                     <h5 className="relative border-l-2 border-[#5181b8] bg-[#eceff1] text-black px-4 py-1 cursor-pointer hover:bg-[#E5E7EB]">News</h5>
