@@ -82,6 +82,9 @@ function Center({user_pic, user_name}) {
                         <CenterPost data={post_data}/>
                     ))
                 }
+                <CenterPost data={''}/>
+                <CenterPost data={''}/>
+                <CenterPost data={''}/>
             </div>
         </div>
     )
